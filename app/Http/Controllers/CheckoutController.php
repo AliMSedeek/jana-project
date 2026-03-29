@@ -30,6 +30,6 @@ class CheckoutController extends Controller
 
         session()->forget('cart');
 
-        return redirect()->route('products.index')->with('success', 'Order placed successfully! 🎉');
+        return redirect()->route('cakes.index')->with('success', 'Order placed successfully! 🎉');
     }
 }
